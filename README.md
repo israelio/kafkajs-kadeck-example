@@ -2,6 +2,11 @@
 - Example of running docker with one node of kafka using node consumer / producer 
 use kadeck at port localhost:80 and connect to kafka:29092 to monitor the local kafka
 
+edit the docker-compose file and change the following line with your email:
+```sh
+xeotek_kadeck_free: "register-with-your-email"
+```
+
 - Run the kafka broker and kadeck docker images
 ```sh
 docker-compose up -d
