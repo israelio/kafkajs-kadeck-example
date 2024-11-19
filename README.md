@@ -26,3 +26,9 @@ declare a new connection to your local kafka broker, use the following address
 ```sh
 kafka:29092
 ```
+
+- Open additional terminals and start the protobuf-based producer and consumer
+```sh
+node producer3.js
+node consumer3.js
+```
