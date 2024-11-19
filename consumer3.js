@@ -38,13 +38,17 @@ async function run() {
     // Run the consumer and print messages to console
     await consumer.run({
         eachMessage: async ({ topic, partition, message }) => {
-            const decodedMessage = MessageProto.decode(message.value);
-            console.log({
-                topic,
-                partition,
-                offset: message.offset,
-                value: decodedMessage,
-            });
+            if (message.value.length > 0) {
+                const decodedMessage = MessageProto.decode(message.value);
+                console.log({
+                    topic,
+                    partition,
+                    offset: message.offset,
+                    value: decodedMessage,
+                });
+            } else {
+                console.error('Received empty message');
+            }
         },
     });
 
