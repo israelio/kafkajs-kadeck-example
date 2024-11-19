@@ -21,6 +21,14 @@ node consumer1.js
 node consumer2.js
 ```
 
+
+- Open 2 terminals and start a protobuf producer and protobuf consumer
+- start a kafka producers
+```sh
+node producer3.js
+node consumer3.js
+```
+
 - Open the browser and open kadeck ui at http://localhost:80 and login using username: admin password: admin
 declare a new connection to your local kafka broker, use the following address
 ```sh
