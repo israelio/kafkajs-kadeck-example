@@ -56,3 +56,17 @@ node consumer4.js
   3. Open another terminal and run the Flink job example script using the command `node flink-job-example.js`.
   4. The Flink job will consume messages from the `flink-topic` Kafka topic, process them, and print the processed messages to the console.
   5. Monitor the Flink job's progress and status using the Flink Web UI at `http://localhost:8081`.
+
+- To demo the use of `flink-job-example.py`, follow these steps:
+  1. Ensure that the Flink services are running using `docker-compose up -d`.
+  2. Start the Flink-based producer and consumer by running `node producer4.js` and `node consumer4.js` in separate terminals.
+  3. Open another terminal and run the Flink job example script using the command `python flink-job-example.py`.
+  4. The Flink job will consume messages from the `flink-topic` Kafka topic, process them, and print the processed messages to the console.
+  5. Monitor the Flink job's progress and status using the Flink Web UI at `http://localhost:8081`.
+
+- To demo the use of `flink-job-example-no-flink-lib.py`, follow these steps:
+  1. Ensure that the Flink services are running using `docker-compose up -d`.
+  2. Start the Flink-based producer and consumer by running `node producer4.js` and `node consumer4.js` in separate terminals.
+  3. Open another terminal and run the Flink job example script using the command `python flink-job-example-no-flink-lib.py`.
+  4. The Flink job will consume messages from the `flink-topic` Kafka topic, process them, and print the processed messages to the console.
+  5. Monitor the Flink job's progress and status using the Flink Web UI at `http://localhost:8081`.
