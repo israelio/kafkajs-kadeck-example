@@ -45,3 +45,7 @@ node consumer4.js
 ```
 
 - The new Kafka topic for Flink is `flink-topic`.
+
+- This example uses Flink for stream processing by running Flink services in the background. The `producer4.js` script publishes messages to the `flink-topic` Kafka topic, and the `consumer4.js` script consumes messages from the same topic. Flink can be configured to perform stream processing on the messages in the `flink-topic` Kafka topic.
+
+- To monitor Flink and see how it works, you can use the Flink Web UI. The Flink JobManager is accessible on port 8081. Open your browser and navigate to `http://localhost:8081` to access the Flink Web UI. From there, you can monitor the status of your Flink jobs, view job details, and check the progress of your stream processing tasks.
