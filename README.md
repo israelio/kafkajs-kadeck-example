@@ -7,7 +7,7 @@ edit the docker-compose file and change the following line with your email:
 xeotek_kadeck_free: "register-with-your-email"
 ```
 
-- Run the kafka broker and kadeck docker images
+- Run the kafka broker, kadeck, and Flink docker images
 ```sh
 docker-compose up -d
 ```
@@ -37,3 +37,11 @@ kafka:29092
 node producer3.js
 node consumer3.js
 ```
+
+- Open additional terminals and start the Flink-based producer and consumer
+```sh
+node producer4.js
+node consumer4.js
+```
+
+- The new Kafka topic for Flink is `flink-topic`.
